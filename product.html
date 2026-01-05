@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head><title>products</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+a{text-decoration:none;}
+img{max-width:100%}
+body{font-weight:400;line-height:1.2;}
+
+.icn_1{width:30%;float:left;}
+.icn_1 img{width: 225px;display: block;}
+.s_bar{width:40%;float:left;border:1px solid #b2b2b2;border-radius:30px;margin-top: 20px;padding: 13px 0px;}
+.s_bar p{display:inline-block;font-size:16px;color:#b2b2b2;line-height:21px;letter-spacing:1px;margin-left:3px;}
+.icns{width:30%;float:left;text-align:right;}
+.icns li{display:inline-block;padding:30px 7px;}
+
+.header{width:100%;float:left;padding:10px 50px;background-color:#fff;}
+
+.row_1{width:100%;float:left;}
+.row_1 a{font-size:16px;color:#000;line-height:18px;letter-spacing:1.11px;font-weight:300;transition:0.3s linear;}	
+.row_1 a:hover{color:#B69A49;transition:0.3s linear;}
+.row_1 li{display:inline-block;margin-right:40px;}
+
+.menu{width:100%;float:left;padding:25px 50px;}
+.group_header{width:100%;float:left;}
+
+.home_page{width:100%;float:left;padding:50px;}
+
+.coloum_1{width:50%;float:left;padding-right: 35px;}
+.photo_1{width:100%;float:left;}
+.photo_1 img{max-width:100%;float:left;}
+.slider{width:100%;float:left;}
+.slider li{display:block;}
+.slider img{width:111px;border:1px solid grey;}
+.slider ul{display:flex;justify-content:center;align-items:center;gap: 25px;padding-top: 19px;}
+
+.coloum_2{width:50%;float:left;gap:20px;}
+.block{width:100%;float:left;}
+.block h2{text-transform:uppercase;font-size:20px;color:#121212;line-height:24px;letteer-spacing:1.12px;padding-bottom:8px;}
+.block span{font-size:16px;color:#646464;line-height:19px;letter-spacing:1.12px;font-weight:300;}
+.block h4{padding: 35px 0 10px;font-size:16px;color:#121212;line-height:24px;letter-spacing:1.12px;padding-bottom:8px;font-weight:300;}
+.block p{padding-bottom: 15px;font-size:18px;color:#B69A49;line-height:18px;letter-spacing:1.2px;font-weight:500;}
+.block_2{width:100%;float:left;border-top:1px solid #B69A49;}
+.block_2 p{text-transform:uppercase;font-size:12px;color:#202020;letter-spacing:1.2px;padding:11px 0px;}
+.block_2 ul{display:flex;gap:10px;}
+.block_2 li{display:block;}
+.block_2 li a img{width: 64px;outline: 1px solid #B69A49;padding: 3px;}
+.block_2 li h3{font-size:13px;color:#000;font-weight:400;letter-spacing:1.12px;text-align:center;}
+
+.block_3{width:100%;float:left;padding:40px 0px;}
+.block_3 ul{display:flex;justify-content: space-between;align-items:center;}
+.block_3 li{display:block;}
+.block_3 a.box_1{font-size:16px;color:#000;padding:12px 80px;background:transparent;border:2px solid #000;}
+.block_3 a.box_2{font-size:16px;color:#fff;padding:12px 80px;background:#000;line-height:19px;}
+.block_3 a.box{font-size:16px;color:#fff;padding:12px 80px;background:#B69A49;line-height:19px;transition:0.2s linear;}
+.block_3 a.box:hover{transition:0.2s linear;background:#000;}
+
+.block_4{width:100%;float:left;padding:30px 0px;display:flex;justify-content: space-evenly;align-items:center;align-contant:center;}
+.col_2{border:1px solid grey;text-align:center;padding:25px 0px;}
+.col_2 img{max-width:100%;margin-bottom:2px;}
+.col_2 p{text-transform:uppercase;font-size:12px;color:#202020;line-height:15px;letter-spacing:1.12px;font-weight:300;}
+
+.block_5{width:100%;float:left;padding:40px 0px;}
+.block_5 li{display:block;padding:12px 15px;border-bottom:1px solid grey;}
+
+.block_5 li a{font-size:14px;color:#202020;line-height:19px;letter-spacing:1.12px;text-transform:uppercase;}	
+
+
+.sec_2{width:100%;float:left;display:flex; align-items: center;justify-content:center;gap:103px;}
+.review{width:100%;float:left;padding-top:50px;text-align:center;}
+.review h3{font-size:24px;color:#202020;line-height:33px;letter-spacing:1.12px;margin-bottom:32px;}
+.col_3{    padding: 25px 0px;}
+.col_3 span{font-size:14px;color:#b99f52;}
+.col_3 p{font-size:14px;color:#121212;line-height:19px;letter-spacing:1.12px;}
+.col_4{border-left: 1px solid grey;padding-left: 85px;}
+.col_4 a{font-size:16px;color:#fff;background:#000;padding:13px 76px;line-height:20px;letter-spacing:1.12px;display:inline-block;}
+.col_4 a:hover{transition:0.3s linear;background-color:#B69A49;}
+
+.txt_1{width:100%;float:left;padding:60px 50px 25px;}
+.txt_1 h3{font-size:20px;color:#202020;line-height:26px;letter-spacing:1.12px;}
+.media{width:100%;float:left;display:flex; align-items: center;justify-content:space-between;padding:0 40px 60px;}
+.bloc_2{width:33.33%;float:left;}
+.bloc_2 img{width:460px;}
+.bloc_2 a{font-size:16px;color:#202020;line-height:19px;letter-spacing:1.12px;transition:0.2s linear;}
+.bloc_2 a:hover{transition:0.2s linear;color:#B69A49;}
+.bloc_2 p{font-size:16px;color:#202020;line-height:19px;letter-spacing:1.12px;padding-top:11px;}
+
+.text{width:100%;float:left;text-align:center;padding-bottom:50px;}
+.text h3{font-size:24px;line-height:26px;letter-spacing:1.12px;color:#202020;padding-bottom:14px;}
+.text p{font-size:16px;line-height:28px;lettter-spacing:1.12px;font-weight:300;}
+.bloc_3{width:23%;float:left;text-align:center;}
+.bloc_3.part_3{margin:0 2%;}
+.bloc_3.part_4{margin-right:2%;}
+.bloc_3 img{width: 80px;height: 65px;}
+.bloc_3 h3{font-size:24px;color:#202020;line-height:24px;letter-spacing:1.12px;padding-bottom:32px;}
+.bloc_3 p{font-size:16px;line-height:28px;lettter-spacing:1.12px;font-weight:300;}
+
+.row_6{width:100%;float:left;}
+.serv{width:100%;float:left;background-color:rgb(245 241 229);padding:85px 45px;}
+.service{width:100%;float:left;padding: 70px 50px;background-color:#fff;}
+
+
+.letter{width:50%;Float:left;}
+.letter h3{font-size:20px;color:#fff;line-height:22px;letter-spacing:2px;padding-bottom:15px;}
+.letter p{font-size:14px;color:#fff;padding:12px 0px;line-height:21px;letter-spacing:1.12px;font-weight:300;border-bottom:2px solid #5f5f5f;}
+.social_media{width:50%;float:left;text-align:right;padding:30px 0px;}
+.social_media li{display:inline-block;padding:0 10px;}
+.social_media a{outline: 1px solid #fff;border-radius: 50%;padding: 5px 5px;}
+
+.mail_box{width:100%;float:left;background-color:#323232;padding: 40px 50px;}
+
+.col_7{width:25%;float:left;}
+.col_7 h3{font-size:16px;color:#000;letter-spacing:0.738px;font-weight:400;line-height:16px;margin-bottom:16px;}
+.col_7 li{display:block;padding-bottom:14px;}
+.col_7 a{font-size:14px;color:#202020;letter-spacing:1.12px;font-weight:200;line-height:normal;}
+.col_7 a:hover{color:#B69A49;transition:0.3s linear;}
+.sec_1{width:100%;float:left;padding:78px 0px;background-color:#f5f1e5;}
+.sec_2{width:100%;float:left;background-color:#f5f1e5;}
+.bottom_info{display: flex; flex-wrap: wrap; align-items: center;justify-content: space-between;padding:41px 0 50px;border-top: 1px solid rgba(186, 157, 75, .2);border-bottom: 1px solid rgba(186, 157, 75, .2);}
+.row_7{display: flex;flex-wrap: wrap;;}
+.row_7 img{max-width:100%;float:left;}
+.row_7 li{display:inline-block;padding-5px;}
+.row_7 a{font-size:16px;color:#202020;line-height:16px;letter-spacing:1.12px;font-weight:300;}
+.row_8{display: flex;flex-wrap: wrap;justify-content: end;}
+.row_8 img{box-sizing: inherit;}
+
+.sec_3{width:100%;float:left;background-color:#f5f1e5;}
+.copyright_cap{text-align: center;margin-top: 0;display: flex;flex-wrap: wrap; justify-content: center;width: 100%;align-items: center;padding:41px 53px;}
+.copyright_cap span{font-size:16px;color:#202020;letter-spacing:1.12px;font-weight:300;}	
+.copyright_cap span a{font-size:16px;color:#202020;letter-spacing:1.12px;font-weight:300;transition:0.2s linear;}	
+.copyright_cap span a:hover{transition:0.2s linear;color:#B69A49;}
+.footer{width:100%;float:left;padding:0 50px;background-color:#f5f1e5;}
+
+
+
+
+
+</style>
+<body>
+<div class="group_header">
+<div class="header">
+<div class="icn_1">
+<img src="icon.avif">
+</div>
+
+<div class="s_bar">
+<a href="#"><i class="fa-solid fa-magnifying-glass" style="color:#b2b2b2;margin-left: 30px;font-size: 20px;"></i></a>
+<p>Search for products or brands</p>
+</div>
+
+<div class="icns">
+<ul>
+<li><a href="#"><i class="fa-regular fa-heart" style="color:#000;font-size:30px;"></i></a></li>	
+<li><a href="#"><i class="fa-regular fa-user" style="color:#000;font-size:30px;"></i></a></li>
+<li><a href="#"><i class="fa-solid fa-bag-shopping" style="color:#000;font-size:30px;"></i></a></li>
+</ul>
+</div>
+</div>
+
+<div class="menu">
+<div class="row_1">
+<ul>
+<li><a href="#">Furniture<i class="fa-solid fa-angle-down"></i></a></li>
+<li><a href="#">Bedroom<i class="fa-solid fa-angle-down"></i></a></li>
+<li><a href="#">Living Room<i class="fa-solid fa-angle-down"></i></a></li>
+<li><a href="#">Dining<i class="fa-solid fa-angle-down"></i></a></li>
+<li><a href="#">Home Office<i class="fa-solid fa-angle-down"></i></a></li>
+<li><a href="#">Accessories<i class="fa-solid fa-angle-down"></i></a></li>
+<li><a href="collec.html">Collections<i class="fa-solid fa-angle-down"></i></a></li>
+<li><a href="#">Customization</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!---product page starts-->
+
+<div class="home_page">
+<div class="coloum_1">
+<div class="photo">
+<img src="pp.webp">
+</div>
+
+<div class="slider">
+<ul>
+<li><a href="#"><img src="p1.webp"></a></li>	
+<li><a href="#"><img src="p2.webp"></a></li>
+<li><a href="#"><img src="p3.webp"></a></li>
+<li><a href="#"><img src="p4.webp"></a></li>
+</ul>
+</div>
+</div>
+
+<div class="coloum_2">
+<div class="block">
+<h2>athena solid wood bed in espresso finish</h2>
+<span>SKU: KINGBED052<i class="fa-regular fa-heart"></i>Add to wishlist<i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>No reviews</span>
+<h4>₹ 49,999.00</h4>
+<p><i class="fa-solid fa-truck-fast" style="color: #e9b701;font-size: 27px;margin-right: 10px;"></i>Ships in: 3-4 Weeks</p>
+</diV>
+
+<div class="block_2">
+<p>Mattress Size: Queen (Mattress Size : 78" Length X 60" Width)</p>
+<ul>
+<li><a href="#"><img src="p1.webp"><h3>King</h3></a></li>
+<li><a href="#"><img src="p1.webp"><h3>Queen</h3></a></li>	
+</ul>
+</div>
+
+<div class="block_3">
+<ul>																	
+<li><a href="#"class="box_1">- 1 +</a></li>
+<li><a href="#"class="box_2">Add to cart</a></li>
+<li><a href="#"class="box">buy it now</a></li>
+</div>
+
+<div class="block_4">
+<div class="col_2">
+<img src=""//kalyanamfurniture.com/cdn/shop/files/icon1.svg?v=1746879541">	
+<p>EMI Available See at Checkout</p>
+</div>
+
+<div class="col_2">
+<img src="https://kalyanamfurniture.com/cdn/shop/files/icon2.svg?v=1746879541">
+<p>Free installation all over India</p>
+</div>
+
+<div class="col_2">
+<img src="https://kalyanamfurniture.com/cdn/shop/files/icon3.svg?v=1746879541">
+<p>Free shipping on prepaid order</p>
+</div>
+
+<div class="col_2">
+<img src="https://kalyanamfurniture.com/cdn/shop/files/icon4.svg?v=1746879541">
+<p>36 months warranty</p>
+</div>
+</div>
+
+<div class="block_5">
+<li><a href="#">DETAILS</a></li>
+<li><a href="#">Additional Info</a></li>
+<li><a href="#">care</a></li>
+<li><a href="#">warrenty & installation</a></li>
+<li><a href="#">returns & cancellations</a></li>
+<li><a href="#">quality promise</a></li>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="review">
+<h3>Customer Reviews</h3>
+</div>
+<div class="sec_2">
+<div class="col_3">
+<span>★★★★★</span>
+<p>Be the first to write a review</p>
+</div>
+
+<div class="col_4">
+<a href="#">Write a Review</a>
+</div>
+</div>
+
+
+
+<div class="txt_1">
+<h3>You might also like</h3>
+</div>
+
+<div class="media">
+<div class="bloc_2">
+<img src="tu.webp">
+<a>Athena Solid Wood Bedside/Nightstand Table</a>
+<p>₹ 5,999.00</p>
+</div>
+
+<div class="bloc_2">
+<img src="tuu.webp">
+<a>Athena Solid Wood Frame Mirror</a>
+<p>₹ 13,999.00</p>
+</div>
+
+<div class="bloc_2">
+<img src="tuuu.webp">
+<a>Damakas Solid Wood Bed In Natural Finish</a>
+<p>₹ 37,999.00</p>
+</div>
+</div>
+
+
+
+
+<div class="service">
+<div class="serv">
+<div class="text">
+<h3>Step into Our World of Exclusive Solid Wood Furniture</h3>
+<p>Shop Solid Sheesham Wood Furniture Online in India: Expert Craftsmanship, Treated and Seasoned for Quality Assurance. Plus,<br> Enjoy a Lifetime Warranty and Secure Delivery!</p>
+</div>
+
+<div class="row_6">
+<div class="bloc_3">
+<img src="logo.svg">
+<h3>Assured Quality</h3>
+<p>We strive to provide you with products only after its quality have been assured</p>
+</div>
+
+<div class="bloc_3 part_3">
+<img src="logo_2.svg">
+<h3>Value For Money</h3>
+<p>We guarantee cheaper prices than your favorite online store.</p>
+</div>
+
+
+<div class="bloc_3 part_4">
+<img src="logo_3.svg">
+<h3>36 Month Warranty</h3>
+<p>Sit back and relax once you've placed an order with us, we've got you covered.</p>
+</div>
+
+
+<div class="bloc_3">
+<img src="logo_4.svg">
+<h3>Free Assembly Service</h3>
+<p>We offer a nationwide Free installation services. Call us at <a href="#">+91 7023886057 </a>after delivery of your order</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="mail_box">
+<div class="letter">
+<h3>Newsletter</h3>
+<p>Type your email here</p>
+</div>
+
+<div class="social_media">
+<ul>
+<li><a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;font-size:17px;"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;font-size:17px;"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;font-size:17px;"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-pinterest" style="color: #ffffff;font-size:17px;"></i></a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="footer">
+<div class="sec_1">
+<div class="col_7">
+<h3>Shop By</h3>
+<ul>
+<li><a href="#">Furniture</a></li>
+<li><a href="#">Bedroom</a></li>
+<li><a href="#">Living Room</a></li>
+<li><a href="#">Dining</a></li>
+<li><a href="#">Home Office</a></li>
+<li><a href="#">Accessories</a></li>
+<li><a href="#">Customization</a></li>
+</ul>
+</div>
+
+<div class="col_7">
+<h3>Information</h3>
+<ul>
+<li><a href="disclaimer.html">Care & Instructions</a></li>
+<li><a href="disclaimer.html">Disclaimer</a></li>
+<li><a href="disclaimer.html">Payment Policy</a></li>
+<li><a href="disclaimer.html">Privacy Policy</a></li>
+<li><a href="disclaimer.html">Shipping Policy</a></li>
+</ul>
+</div>
+
+<div class="col_7">
+<h3>Customer Services</h3>
+<ul>
+<li><a href="contact.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="#">Track Your Order</a></li>
+<li><a href="#">Return & Refund</a></li>
+<li><a href="#">FAQ’s</a></li>
+<li><a href="#">Blogs</a></li>
+</ul>
+</div>
+
+<div class="col_7">
+<h3>Account</h3>
+<ul>
+<li><a href="contact.html">Register Now</a></li>
+<li><a href="#">Sign in</a></li>
+<li><a href="#">My Account</a></li>
+</ul>
+</div>
+</div>
+
+<div class="sec_2">
+<div class="bottom_info">
+<div class="row_7">
+<img src="footerlogo.webp">
+</div>
+
+<div class="row_7">
+<ul>
+<li><i class="fa-regular fa-envelope" style="color: #939189;"></i></li>
+<li><a href="#">furniture@kalyanamfurniture.com</a></li>
+<ul>	
+</div>
+
+<div class="row_8">
+<img src="footer_row.svg">
+</div>
+</div>
+</div>
+
+<div class=sec_3">
+<div class="copyright_cap">
+<span>© 2025<a href="#">tusharjangir523@gmail.com</a> .All rights reserved.</span>	
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
